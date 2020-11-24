@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="#ffffff"
+    tools:context=".MainActivity">
+
+    <!--顶部内容-->
+    <TextView
+        android:textSize="28sp"
+        android:id="@+id/tvTitle"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="?android:attr/actionBarSize"
+        android:text="首页"
+        />
+    <!--底部导航栏-->
+    <LinearLayout
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ll_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:drawableTop="@drawable/icon_home_selector"
+            android:textColor="@drawable/txt_bg_selector"
+            android:id="@+id/tv_tab_home"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:drawableTop="@drawable/icon_hot_selector"
+            android:textColor="@drawable/txt_bg_selector"
+            android:id="@+id/tv_tab_hot"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="热卖"
+            />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:drawableTop="@drawable/icon_message_selector"
+            android:textColor="@drawable/txt_bg_selector"
+            android:id="@+id/tv_tab_message"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            />
+
+        <TextView
+            android:padding="5dp"
+            android:drawableTop="@drawable/icon_cart_selector"
+            android:textColor="@drawable/txt_bg_selector"
+            android:id="@+id/tv_tab_cart"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            android:text="购物车"
+            />
+
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:drawableTop="@drawable/icon_user_selector"
+            android:textColor="@drawable/txt_bg_selector"
+            android:id="@+id/tv_tab_user"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            />
+    </LinearLayout>
+
+    <!--中间的ViewPager-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_above="@+id/ll_bottom_menu"
+        android:layout_below="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--文字选中颜色   注意： android:color 没有提示 -->
+    <item android:color="#EC6339" android:state_selected="true"/>
+    <item android:color="#747171"/>
+</selector>
